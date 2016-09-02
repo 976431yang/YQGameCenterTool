@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95BCBC471D79402F0035827C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBC461D79402F0035827C /* main.m */; };
+		95BCBC4A1D79402F0035827C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBC491D79402F0035827C /* AppDelegate.m */; };
+		95BCBC4D1D79402F0035827C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBC4C1D79402F0035827C /* ViewController.m */; };
+		95BCBC501D79402F0035827C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BCBC4E1D79402F0035827C /* Main.storyboard */; };
+		95BCBC521D79402F0035827C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BCBC511D79402F0035827C /* Assets.xcassets */; };
+		95BCBC551D79402F0035827C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BCBC531D79402F0035827C /* LaunchScreen.storyboard */; };
+		95BCBC601D79402F0035827C /* YQGameCenterToolDEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBC5F1D79402F0035827C /* YQGameCenterToolDEMOTests.m */; };
+		95BCBC6B1D79402F0035827C /* YQGameCenterToolDEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBC6A1D79402F0035827C /* YQGameCenterToolDEMOUITests.m */; };
+		95BCBC7E1D7940B90035827C /* YQGameCenterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BCBC7D1D7940B90035827C /* YQGameCenterTool.m */; };
+		95BCBC801D7940C70035827C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BCBC7F1D7940C70035827C /* GameKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95BCBC5C1D79402F0035827C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95BCBC3A1D79402F0035827C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95BCBC411D79402F0035827C;
+			remoteInfo = YQGameCenterToolDEMO;
+		};
+		95BCBC671D79402F0035827C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95BCBC3A1D79402F0035827C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95BCBC411D79402F0035827C;
+			remoteInfo = YQGameCenterToolDEMO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95BCBC421D79402F0035827C /* YQGameCenterToolDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQGameCenterToolDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BCBC461D79402F0035827C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95BCBC481D79402F0035827C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95BCBC491D79402F0035827C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95BCBC4B1D79402F0035827C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95BCBC4C1D79402F0035827C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95BCBC4F1D79402F0035827C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95BCBC511D79402F0035827C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95BCBC541D79402F0035827C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95BCBC561D79402F0035827C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BCBC5B1D79402F0035827C /* YQGameCenterToolDEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQGameCenterToolDEMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BCBC5F1D79402F0035827C /* YQGameCenterToolDEMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQGameCenterToolDEMOTests.m; sourceTree = "<group>"; };
+		95BCBC611D79402F0035827C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BCBC661D79402F0035827C /* YQGameCenterToolDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQGameCenterToolDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BCBC6A1D79402F0035827C /* YQGameCenterToolDEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQGameCenterToolDEMOUITests.m; sourceTree = "<group>"; };
+		95BCBC6C1D79402F0035827C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BCBC7C1D7940B90035827C /* YQGameCenterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQGameCenterTool.h; sourceTree = "<group>"; };
+		95BCBC7D1D7940B90035827C /* YQGameCenterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQGameCenterTool.m; sourceTree = "<group>"; };
+		95BCBC7F1D7940C70035827C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95BCBC3F1D79402F0035827C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BCBC801D7940C70035827C /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BCBC581D79402F0035827C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BCBC631D79402F0035827C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95BCBC391D79402F0035827C = {
+			isa = PBXGroup;
+			children = (
+				95BCBC7F1D7940C70035827C /* GameKit.framework */,
+				95BCBC7B1D7940B90035827C /* YQGameCenterTool */,
+				95BCBC441D79402F0035827C /* YQGameCenterToolDEMO */,
+				95BCBC5E1D79402F0035827C /* YQGameCenterToolDEMOTests */,
+				95BCBC691D79402F0035827C /* YQGameCenterToolDEMOUITests */,
+				95BCBC431D79402F0035827C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95BCBC431D79402F0035827C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95BCBC421D79402F0035827C /* YQGameCenterToolDEMO.app */,
+				95BCBC5B1D79402F0035827C /* YQGameCenterToolDEMOTests.xctest */,
+				95BCBC661D79402F0035827C /* YQGameCenterToolDEMOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95BCBC441D79402F0035827C /* YQGameCenterToolDEMO */ = {
+			isa = PBXGroup;
+			children = (
+				95BCBC481D79402F0035827C /* AppDelegate.h */,
+				95BCBC491D79402F0035827C /* AppDelegate.m */,
+				95BCBC4B1D79402F0035827C /* ViewController.h */,
+				95BCBC4C1D79402F0035827C /* ViewController.m */,
+				95BCBC4E1D79402F0035827C /* Main.storyboard */,
+				95BCBC511D79402F0035827C /* Assets.xcassets */,
+				95BCBC531D79402F0035827C /* LaunchScreen.storyboard */,
+				95BCBC561D79402F0035827C /* Info.plist */,
+				95BCBC451D79402F0035827C /* Supporting Files */,
+			);
+			path = YQGameCenterToolDEMO;
+			sourceTree = "<group>";
+		};
+		95BCBC451D79402F0035827C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95BCBC461D79402F0035827C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95BCBC5E1D79402F0035827C /* YQGameCenterToolDEMOTests */ = {
+			isa = PBXGroup;
+			children = (
+				95BCBC5F1D79402F0035827C /* YQGameCenterToolDEMOTests.m */,
+				95BCBC611D79402F0035827C /* Info.plist */,
+			);
+			path = YQGameCenterToolDEMOTests;
+			sourceTree = "<group>";
+		};
+		95BCBC691D79402F0035827C /* YQGameCenterToolDEMOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95BCBC6A1D79402F0035827C /* YQGameCenterToolDEMOUITests.m */,
+				95BCBC6C1D79402F0035827C /* Info.plist */,
+			);
+			path = YQGameCenterToolDEMOUITests;
+			sourceTree = "<group>";
+		};
+		95BCBC7B1D7940B90035827C /* YQGameCenterTool */ = {
+			isa = PBXGroup;
+			children = (
+				95BCBC7C1D7940B90035827C /* YQGameCenterTool.h */,
+				95BCBC7D1D7940B90035827C /* YQGameCenterTool.m */,
+			);
+			path = YQGameCenterTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95BCBC411D79402F0035827C /* YQGameCenterToolDEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BCBC6F1D79402F0035827C /* Build configuration list for PBXNativeTarget "YQGameCenterToolDEMO" */;
+			buildPhases = (
+				95BCBC3E1D79402F0035827C /* Sources */,
+				95BCBC3F1D79402F0035827C /* Frameworks */,
+				95BCBC401D79402F0035827C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YQGameCenterToolDEMO;
+			productName = YQGameCenterToolDEMO;
+			productReference = 95BCBC421D79402F0035827C /* YQGameCenterToolDEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95BCBC5A1D79402F0035827C /* YQGameCenterToolDEMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BCBC721D79402F0035827C /* Build configuration list for PBXNativeTarget "YQGameCenterToolDEMOTests" */;
+			buildPhases = (
+				95BCBC571D79402F0035827C /* Sources */,
+				95BCBC581D79402F0035827C /* Frameworks */,
+				95BCBC591D79402F0035827C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95BCBC5D1D79402F0035827C /* PBXTargetDependency */,
+			);
+			name = YQGameCenterToolDEMOTests;
+			productName = YQGameCenterToolDEMOTests;
+			productReference = 95BCBC5B1D79402F0035827C /* YQGameCenterToolDEMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95BCBC651D79402F0035827C /* YQGameCenterToolDEMOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BCBC751D79402F0035827C /* Build configuration list for PBXNativeTarget "YQGameCenterToolDEMOUITests" */;
+			buildPhases = (
+				95BCBC621D79402F0035827C /* Sources */,
+				95BCBC631D79402F0035827C /* Frameworks */,
+				95BCBC641D79402F0035827C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95BCBC681D79402F0035827C /* PBXTargetDependency */,
+			);
+			name = YQGameCenterToolDEMOUITests;
+			productName = YQGameCenterToolDEMOUITests;
+			productReference = 95BCBC661D79402F0035827C /* YQGameCenterToolDEMOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95BCBC3A1D79402F0035827C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ProblenChild;
+				TargetAttributes = {
+					95BCBC411D79402F0035827C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CKAC5QB95T;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
+					95BCBC5A1D79402F0035827C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 95BCBC411D79402F0035827C;
+					};
+					95BCBC651D79402F0035827C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 95BCBC411D79402F0035827C;
+					};
+				};
+			};
+			buildConfigurationList = 95BCBC3D1D79402F0035827C /* Build configuration list for PBXProject "YQGameCenterToolDEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95BCBC391D79402F0035827C;
+			productRefGroup = 95BCBC431D79402F0035827C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95BCBC411D79402F0035827C /* YQGameCenterToolDEMO */,
+				95BCBC5A1D79402F0035827C /* YQGameCenterToolDEMOTests */,
+				95BCBC651D79402F0035827C /* YQGameCenterToolDEMOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95BCBC401D79402F0035827C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BCBC551D79402F0035827C /* LaunchScreen.storyboard in Resources */,
+				95BCBC521D79402F0035827C /* Assets.xcassets in Resources */,
+				95BCBC501D79402F0035827C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BCBC591D79402F0035827C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BCBC641D79402F0035827C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95BCBC3E1D79402F0035827C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BCBC7E1D7940B90035827C /* YQGameCenterTool.m in Sources */,
+				95BCBC4D1D79402F0035827C /* ViewController.m in Sources */,
+				95BCBC4A1D79402F0035827C /* AppDelegate.m in Sources */,
+				95BCBC471D79402F0035827C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BCBC571D79402F0035827C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BCBC601D79402F0035827C /* YQGameCenterToolDEMOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95BCBC621D79402F0035827C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95BCBC6B1D79402F0035827C /* YQGameCenterToolDEMOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95BCBC5D1D79402F0035827C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95BCBC411D79402F0035827C /* YQGameCenterToolDEMO */;
+			targetProxy = 95BCBC5C1D79402F0035827C /* PBXContainerItemProxy */;
+		};
+		95BCBC681D79402F0035827C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95BCBC411D79402F0035827C /* YQGameCenterToolDEMO */;
+			targetProxy = 95BCBC671D79402F0035827C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95BCBC4E1D79402F0035827C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95BCBC4F1D79402F0035827C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95BCBC531D79402F0035827C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95BCBC541D79402F0035827C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95BCBC6D1D79402F0035827C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95BCBC6E1D79402F0035827C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95BCBC701D79402F0035827C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YQGameCenterToolDEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.problenchild.YQGameCenterToolDEMO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95BCBC711D79402F0035827C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YQGameCenterToolDEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.problenchild.YQGameCenterToolDEMO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		95BCBC731D79402F0035827C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YQGameCenterToolDEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.problenchild.YQGameCenterToolDEMOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQGameCenterToolDEMO.app/YQGameCenterToolDEMO";
+			};
+			name = Debug;
+		};
+		95BCBC741D79402F0035827C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YQGameCenterToolDEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.problenchild.YQGameCenterToolDEMOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQGameCenterToolDEMO.app/YQGameCenterToolDEMO";
+			};
+			name = Release;
+		};
+		95BCBC761D79402F0035827C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YQGameCenterToolDEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.problenchild.YQGameCenterToolDEMOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YQGameCenterToolDEMO;
+			};
+			name = Debug;
+		};
+		95BCBC771D79402F0035827C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YQGameCenterToolDEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.problenchild.YQGameCenterToolDEMOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YQGameCenterToolDEMO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95BCBC3D1D79402F0035827C /* Build configuration list for PBXProject "YQGameCenterToolDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BCBC6D1D79402F0035827C /* Debug */,
+				95BCBC6E1D79402F0035827C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95BCBC6F1D79402F0035827C /* Build configuration list for PBXNativeTarget "YQGameCenterToolDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BCBC701D79402F0035827C /* Debug */,
+				95BCBC711D79402F0035827C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95BCBC721D79402F0035827C /* Build configuration list for PBXNativeTarget "YQGameCenterToolDEMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BCBC731D79402F0035827C /* Debug */,
+				95BCBC741D79402F0035827C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95BCBC751D79402F0035827C /* Build configuration list for PBXNativeTarget "YQGameCenterToolDEMOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BCBC761D79402F0035827C /* Debug */,
+				95BCBC771D79402F0035827C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95BCBC3A1D79402F0035827C /* Project object */;
+}
