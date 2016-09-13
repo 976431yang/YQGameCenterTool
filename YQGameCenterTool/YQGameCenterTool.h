@@ -36,6 +36,8 @@ typedef void(^LeaderBoardClosedBlock)(bool closed);
 -(void)getGameCenterAccountWithBlock:(VCBlock)VCblock;
 
 //向GameCenter提交分数
+//score:分数
+//leaderboardID:排行榜ID
 -(void)setRaitScoreWithSocre:(NSNumber *)score
             andLeaderboardID:(NSString *)leaderboardID
                    withBlock:(BoolBlock)BoolBlock;

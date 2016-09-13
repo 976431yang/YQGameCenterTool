@@ -60,7 +60,8 @@
     
     self.stateLab.text = @"正在登录";
     
-    //先调用GCTool来用GC登陆
+    //请求GameCenter授权登陆
+    //block 如果需要弹出GC的一个VC的话，会调用此Block
     [[YQGameCenterTool defaultTool] getGameCenterAccountWithBlock:^(bool success, UIViewController *viewcontroller)
      {
          
@@ -112,6 +113,7 @@
 //获取所有排行榜
 - (IBAction)GetAllLeaderBoardsBTNTouched:(id)sender {
     
+    //得到所有的排行榜
     [[YQGameCenterTool defaultTool]GetAllLeaderBoardWithBlock:^(bool success, NSArray *array)
      {
          if(success){
@@ -130,13 +132,14 @@
 //显示排行榜
 - (IBAction)ShowLeaderBoardBTNTouched:(id)sender {
     
-    //得到VC
+    //得到排行榜VC
+    //type: today,week,all
     UIViewController *vc = [[YQGameCenterTool defaultTool]GetLeaderBoardVCWithLeaderboardID:kLeaderboardID  andType:@"all"];
     
     //弹出VC
     [self presentViewController:vc animated:YES completion:nil];
     
-    //监测排行榜VC的关闭
+    //检测排行榜VC关闭了,会在排行榜关闭时触发
     [YQGameCenterTool defaultTool].LeaderBoardClosedBlock = ^(BOOL closed){
         [self dismissViewControllerAnimated:YES completion:nil];
     };
@@ -152,6 +155,10 @@
     int socre = self.field.text.intValue;
     
     if(socre!=0){
+        
+        //向GameCenter提交分数
+        //score:分数
+        //leaderboardID:排行榜ID
         [[YQGameCenterTool defaultTool] setRaitScoreWithSocre:[NSNumber numberWithInt:socre]
                                              andLeaderboardID:kLeaderboardID
                                                     withBlock:^(bool success, NSError *error)
@@ -179,8 +186,8 @@
     
     //手动下载GameCenter排行榜的分数
     //type: today,week,all
-    //begin: 从第几名开始
-    //number:获取多少名用户
+    //begin: 从第几名开始1~100
+    //number:获取多少名用户1~100
     [[YQGameCenterTool defaultTool]downloadLeaderBoardScoreWithLeaderBoardID:kLeaderboardID andType:@"all"
                                                                 andBeginRank:@1
                                                                    andNumber:@10
@@ -209,6 +216,9 @@
 //模拟取得成就按钮按下
 - (IBAction)GetAchievmentBTNTouched:(id)sender {
     
+    //报告玩家取得了成就
+    //identifier:成就ID
+    //percentComplete：游戏完成进度1~1000
     [[YQGameCenterTool defaultTool]reportAchievment:kAchievementID
                               andPercentageComplete:101
                                           withBlock:^(bool success, NSError *error)
@@ -234,6 +244,7 @@
                 NSLog(@"alisa  : %@",player.alias);
                 NSLog(@"------------------------");
             }
+            
         }else{
             self.stateLab.text = @"获取在线好友失败了";
         }
