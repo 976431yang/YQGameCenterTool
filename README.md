@@ -13,14 +13,14 @@
 ```
 #####3使用
 
-- [检测GameCenter是否可用](######检测GameCenter是否可用)
-- [使用GameCenter登录](######使用GameCenter登录)
-- [获取所有排行榜](######获取所有排行榜)
-- [显示系统自带GameCenter排行榜VC](######显示系统自带GameCenter排行榜VC)
-- [向排行榜提交分数](######向排行榜提交分数)
-- [手动下载GameCenter排行榜的分数](######手动下载GameCenter排行榜的分数)
+- [检测GameCenter是否可用](#检测GameCenter是否可用)
+- [使用GameCenter登录](#使用GameCenter登录)
+- [获取所有排行榜](#获取所有排行榜)
+- [显示系统自带GameCenter排行榜VC](#显示系统自带GameCenter排行榜VC)
+- [向排行榜提交分数](#向排行榜提交分数)
+- [手动下载GameCenter排行榜的分数](#手动下载GameCenter排行榜的分数)
 - [报告玩家取得了成就](#报告玩家取得了成就)
-- [获取玩家在线的好友](#获取玩家 在线 的 好友)
+- [获取玩家 在线 的 好友](#获取玩家 在线 的 好友)
 
 ######检测GameCenter是否可用
 ```Objective-C
