@@ -3,7 +3,7 @@
 
 ###iOS端对GameCenter的封装
 
-####使用方法：
+####集成方法：
 #####1把文件拖到XCodeg工程中，并开启工程的GameCenter：
  ![image](https://github.com/976431yang/YQGameCenterTool/blob/master/DEMO/screenshot.jpg)
 
@@ -12,6 +12,15 @@
 #import "YQGameCenterTool.h"
 ```
 #####3使用
+
+- [检测GameCenter是否可用](######检测GameCenter是否可用)
+- [使用GameCenter登录](######使用GameCenter登录)
+- [获取所有排行榜](######获取所有排行榜)
+- [显示系统自带GameCenter排行榜VC](######显示系统自带GameCenter排行榜VC)
+- [向排行榜提交分数](######向排行榜提交分数)
+- [手动下载GameCenter排行榜的分数](######手动下载GameCenter排行榜的分数)
+- [报告玩家取得了成就](######报告玩家取得了成就)
+- [获取玩家在线的好友](######获取玩家 在线 的 好友)
 
 ######检测GameCenter是否可用
 ```Objective-C
@@ -65,7 +74,8 @@
 
 	//1得到排行榜VC
     //type: today,week,all
-    UIViewController *vc = [[YQGameCenterTool defaultTool]GetLeaderBoardVCWithLeaderboardID:kLeaderboardID  andType:@"all"];
+    UIViewController *vc = [[YQGameCenterTool defaultTool]GetLeaderBoardVCWithLeaderboardID:kLeaderboardID  
+    										    andType:@"all"];
     
     //2弹出VC
     [self presentViewController:vc animated:YES completion:nil];
@@ -100,7 +110,7 @@
     //begin: 从第几名开始1~100
     //number:获取多少名用户1~100
     [[YQGameCenterTool defaultTool]downloadLeaderBoardScoreWithLeaderBoardID:kLeaderboardID 
-    								  andType:@"all"
+    								     andType:@"all"
                                  andBeginRank:@1
                              		andNumber:@10
                               		WithBlock:^(bool success, NSArray *array)
@@ -159,7 +169,7 @@
             }
             */
         }else{
-            self.stateLab.text = @"获取在线好友失败了";
+            //获取在线好友失败了
         }
     }];
 ```
