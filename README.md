@@ -12,7 +12,6 @@
 #import "YQGameCenterTool.h"
 ```
 #####3使用
-
 - [检测GameCenter是否可用](#检测GameCenter是否可用)
 - [使用GameCenter登录](#使用GameCenter登录)
 - [获取所有排行榜](#获取所有排行榜)
