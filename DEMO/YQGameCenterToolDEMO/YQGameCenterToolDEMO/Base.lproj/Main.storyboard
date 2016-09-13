@@ -1,25 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3b-41-LlN">
+                                <rect key="frame" x="114" y="172" width="147" height="30"/>
+                                <state key="normal" title="使用GameCenter登录"/>
+                                <connections>
+                                    <action selector="LoginBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iG8-wT-h9R"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请使用真机测试" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c61-uo-YyP">
+                                <rect key="frame" x="20" y="28" width="335" height="93"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSu-Ug-RkX">
+                                <rect key="frame" x="161" y="293" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29E-R0-CBa">
+                                <rect key="frame" x="209" y="331" width="30" height="30"/>
+                                <state key="normal" title="提交"/>
+                                <connections>
+                                    <action selector="sendSocreBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mnt-NF-mQh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="提交分数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6M7-ha-xib">
+                                <rect key="frame" x="74" y="296" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-tL-P9g">
+                                <rect key="frame" x="99" y="134" width="177" height="30"/>
+                                <state key="normal" title="检测GameCenter是否可用"/>
+                                <connections>
+                                    <action selector="checkEnableBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lld-qx-Zit"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrx-dV-rGs">
+                                <rect key="frame" x="127" y="210" width="120" height="30"/>
+                                <state key="normal" title="获取所有的排行榜"/>
+                                <connections>
+                                    <action selector="GetAllLeaderBoardsBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWG-Iw-I9l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1d-B3-ivt">
+                                <rect key="frame" x="150" y="248" width="75" height="30"/>
+                                <state key="normal" title="显示排行榜"/>
+                                <connections>
+                                    <action selector="ShowLeaderBoardBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCB-7F-zdF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzI-DE-M8E">
+                                <rect key="frame" x="142" y="420" width="90" height="30"/>
+                                <state key="normal" title="模拟取得成就"/>
+                                <connections>
+                                    <action selector="GetAchievmentBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjh-U8-eZ6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVH-rN-QHN">
+                                <rect key="frame" x="142" y="382" width="90" height="30"/>
+                                <state key="normal" title="手动下载分数"/>
+                                <connections>
+                                    <action selector="downloadScoreBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zr5-Ga-gdz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYk-dc-z8U">
+                                <rect key="frame" x="112" y="458" width="150" height="30"/>
+                                <state key="normal" title="获取已登录的好友列表"/>
+                                <connections>
+                                    <action selector="getOnlineFriendesBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0S7-nV-MXq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="GetLeaderBoardsBTN" destination="Vrx-dV-rGs" id="AMe-mC-4ii"/>
+                        <outlet property="ShowLeaderBoardBTN" destination="Q1d-B3-ivt" id="Mby-TF-Whr"/>
+                        <outlet property="checkEnableBTN" destination="Teg-tL-P9g" id="cHL-0T-fT5"/>
+                        <outlet property="downloadScoreBTN" destination="cVH-rN-QHN" id="cDk-9x-E5l"/>
+                        <outlet property="field" destination="VSu-Ug-RkX" id="qrU-6k-w7v"/>
+                        <outlet property="getAchievmentBTN" destination="bzI-DE-M8E" id="oMX-dy-3D2"/>
+                        <outlet property="getOnlineFriendesBTN" destination="lYk-dc-z8U" id="xrJ-de-lEd"/>
+                        <outlet property="loginBTN" destination="k3b-41-LlN" id="Av7-YJ-kvE"/>
+                        <outlet property="sendScoreBTN" destination="29E-R0-CBa" id="RoF-Be-Uq0"/>
+                        <outlet property="stateLab" destination="c61-uo-YyP" id="HLN-k0-szW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="274.5" y="876.5"/>
         </scene>
     </scenes>
 </document>
