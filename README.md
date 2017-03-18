@@ -1,17 +1,17 @@
 # YQGameCenterTool
-####微博：畸形滴小男孩
+#### 微博：畸形滴小男孩
 
-###iOS端对GameCenter的封装
+### iOS端对GameCenter的封装
 
-####集成方法：
-#####1把文件拖到XCodeg工程中，并开启工程的GameCenter：
+#### 集成方法：
+##### 1把文件拖到XCodeg工程中，并开启工程的GameCenter：
  ![image](https://github.com/976431yang/YQGameCenterTool/blob/master/DEMO/screenshot.jpg)
 
-#####2引入头文件
+##### 2引入头文件
 ```Objective-C
 #import "YQGameCenterTool.h"
 ```
-#####3使用
+##### 3使用
 - [检测GameCenter是否可用](#检测GameCenter是否可用)
 - [使用GameCenter登录](#使用GameCenter登录)
 - [获取所有排行榜](#获取所有排行榜)
@@ -21,7 +21,7 @@
 - [报告玩家取得了成就](#报告玩家取得了成就)
 - [获取玩家在线的好友](#获取玩家在线的好友)
 
-######检测GameCenter是否可用
+###### 检测GameCenter是否可用
 ```Objective-C
 	if([YQGameCenterTool isAvailable]){
         //GameCenter可用"
@@ -29,7 +29,7 @@
         //GameCenter不可用"
     }
 ```
-######使用GameCenter登录
+###### 使用GameCenter登录
 ```Objective-C
 
     [[YQGameCenterTool defaultTool] getGameCenterAccountWithBlock:^(bool success, UIViewController *viewcontroller)
@@ -56,7 +56,7 @@
         }
     }];
 ```
-######获取所有排行榜
+###### 获取所有排行榜
 ```Objective-C
 	[[YQGameCenterTool defaultTool]GetAllLeaderBoardWithBlock:^(bool success, NSArray *array)
     {
@@ -68,7 +68,7 @@
     }];
 ```
 
-######显示系统自带GameCenter排行榜VC
+###### 显示系统自带GameCenter排行榜VC
 ```Objective-C
 
 	//1得到排行榜VC
@@ -85,7 +85,7 @@
     };
 ```
 
-######向排行榜提交分数
+###### 向排行榜提交分数
 ```Objective-C
 
 	//score:分数
@@ -102,7 +102,7 @@
     }];
 ```
 
-######手动下载GameCenter排行榜的分数
+###### 手动下载GameCenter排行榜的分数
 ```Objective-C
 
 	//type: today,week,all
@@ -133,7 +133,7 @@
     }];
 ```
 
-######报告玩家取得了成就
+###### 报告玩家取得了成就
 ```Objective-C
 
 	//identifier     :成就ID
@@ -151,7 +151,7 @@
     }];
 ```
 
-######获取玩家在线的好友
+###### 获取玩家在线的好友
 ```Objective-C
 
 	[[YQGameCenterTool defaultTool] getOnlineFriendsWithArrBlock:^(bool success, NSArray *array)
