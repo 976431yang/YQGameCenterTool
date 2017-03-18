@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,83 +22,150 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3b-41-LlN">
-                                <rect key="frame" x="114" y="172" width="147" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3b-41-LlN">
+                                <rect key="frame" x="110" y="172" width="154" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="U7r-cI-N08"/>
+                                    <constraint firstAttribute="height" constant="30" id="fAf-hW-Qc2"/>
+                                </constraints>
                                 <state key="normal" title="使用GameCenter登录"/>
                                 <connections>
                                     <action selector="LoginBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iG8-wT-h9R"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请使用真机测试" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c61-uo-YyP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请使用真机测试" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c61-uo-YyP">
                                 <rect key="frame" x="20" y="28" width="335" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="Ngw-ij-v5O"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSu-Ug-RkX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSu-Ug-RkX">
                                 <rect key="frame" x="161" y="293" width="127" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cnD-FB-mhK"/>
+                                    <constraint firstAttribute="width" constant="127" id="pPv-Rv-aZU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29E-R0-CBa">
-                                <rect key="frame" x="209" y="331" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29E-R0-CBa">
+                                <rect key="frame" x="201" y="331" width="47" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L3w-g4-DaB"/>
+                                    <constraint firstAttribute="width" constant="47" id="jfG-JM-QBv"/>
+                                </constraints>
                                 <state key="normal" title="提交"/>
                                 <connections>
                                     <action selector="sendSocreBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mnt-NF-mQh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="提交分数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6M7-ha-xib">
-                                <rect key="frame" x="74" y="296" width="85" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提交分数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6M7-ha-xib">
+                                <rect key="frame" x="67" y="296" width="94" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="NsY-6l-VOS"/>
+                                    <constraint firstAttribute="height" constant="21" id="efk-PT-Yjg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-tL-P9g">
-                                <rect key="frame" x="99" y="134" width="177" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-tL-P9g">
+                                <rect key="frame" x="93" y="134" width="189" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="I00-fl-Q8o"/>
+                                    <constraint firstAttribute="height" constant="30" id="TkA-Wn-l5E"/>
+                                </constraints>
                                 <state key="normal" title="检测GameCenter是否可用"/>
                                 <connections>
                                     <action selector="checkEnableBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lld-qx-Zit"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrx-dV-rGs">
-                                <rect key="frame" x="127" y="210" width="120" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrx-dV-rGs">
+                                <rect key="frame" x="125" y="210" width="125" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="ZQa-q9-H56"/>
+                                    <constraint firstAttribute="height" constant="30" id="h0Y-pZ-194"/>
+                                </constraints>
                                 <state key="normal" title="获取所有的排行榜"/>
                                 <connections>
                                     <action selector="GetAllLeaderBoardsBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWG-Iw-I9l"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1d-B3-ivt">
-                                <rect key="frame" x="150" y="248" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1d-B3-ivt">
+                                <rect key="frame" x="146" y="248" width="82" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="BP8-Q7-MNK"/>
+                                    <constraint firstAttribute="height" constant="30" id="aUo-Br-DjB"/>
+                                </constraints>
                                 <state key="normal" title="显示排行榜"/>
                                 <connections>
                                     <action selector="ShowLeaderBoardBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCB-7F-zdF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzI-DE-M8E">
-                                <rect key="frame" x="142" y="420" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzI-DE-M8E">
+                                <rect key="frame" x="136" y="420" width="102" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="9g5-uI-N0I"/>
+                                    <constraint firstAttribute="height" constant="30" id="c1I-8Y-l5c"/>
+                                </constraints>
                                 <state key="normal" title="模拟取得成就"/>
                                 <connections>
                                     <action selector="GetAchievmentBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjh-U8-eZ6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVH-rN-QHN">
-                                <rect key="frame" x="142" y="382" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVH-rN-QHN">
+                                <rect key="frame" x="139" y="382" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I0A-vX-sbr"/>
+                                    <constraint firstAttribute="width" constant="97" id="U4S-d7-nly"/>
+                                </constraints>
                                 <state key="normal" title="手动下载分数"/>
                                 <connections>
                                     <action selector="downloadScoreBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zr5-Ga-gdz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYk-dc-z8U">
-                                <rect key="frame" x="112" y="458" width="150" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYk-dc-z8U">
+                                <rect key="frame" x="107" y="458" width="161" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="Nql-sp-oKw"/>
+                                    <constraint firstAttribute="height" constant="30" id="o8k-gU-5a4"/>
+                                </constraints>
                                 <state key="normal" title="获取已登录的好友列表"/>
                                 <connections>
                                     <action selector="getOnlineFriendesBTNTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0S7-nV-MXq"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q1d-B3-ivt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="03f-5K-ufH"/>
+                            <constraint firstItem="6M7-ha-xib" firstAttribute="top" secondItem="Q1d-B3-ivt" secondAttribute="bottom" constant="18" id="ABa-7p-c3K"/>
+                            <constraint firstItem="Teg-tL-P9g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BIn-aA-KaV"/>
+                            <constraint firstItem="Vrx-dV-rGs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BPK-rq-pIw"/>
+                            <constraint firstItem="c61-uo-YyP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FLp-e6-OoG"/>
+                            <constraint firstItem="29E-R0-CBa" firstAttribute="top" secondItem="VSu-Ug-RkX" secondAttribute="bottom" constant="8" id="IqL-ri-VyD"/>
+                            <constraint firstItem="Q1d-B3-ivt" firstAttribute="top" secondItem="Vrx-dV-rGs" secondAttribute="bottom" constant="8" id="J3D-zh-Fch"/>
+                            <constraint firstItem="cVH-rN-QHN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N4i-GS-Z85"/>
+                            <constraint firstItem="VSu-Ug-RkX" firstAttribute="leading" secondItem="6M7-ha-xib" secondAttribute="trailing" id="TpY-5Z-fjq"/>
+                            <constraint firstItem="VSu-Ug-RkX" firstAttribute="top" secondItem="Q1d-B3-ivt" secondAttribute="bottom" constant="15" id="WvP-dO-gLk"/>
+                            <constraint firstItem="bzI-DE-M8E" firstAttribute="top" secondItem="cVH-rN-QHN" secondAttribute="bottom" constant="8" id="Y6p-lx-wAW"/>
+                            <constraint firstItem="bzI-DE-M8E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ywf-dn-ElS"/>
+                            <constraint firstItem="6M7-ha-xib" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="aLf-XA-mk1"/>
+                            <constraint firstItem="lYk-dc-z8U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJS-0p-1me"/>
+                            <constraint firstItem="c61-uo-YyP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="pKj-Lb-a7l"/>
+                            <constraint firstItem="k3b-41-LlN" firstAttribute="top" secondItem="Teg-tL-P9g" secondAttribute="bottom" constant="8" id="qbe-cp-LTo"/>
+                            <constraint firstItem="29E-R0-CBa" firstAttribute="centerX" secondItem="VSu-Ug-RkX" secondAttribute="centerX" id="qyt-Bl-NbC"/>
+                            <constraint firstItem="lYk-dc-z8U" firstAttribute="top" secondItem="bzI-DE-M8E" secondAttribute="bottom" constant="8" id="rbW-dF-wcf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c61-uo-YyP" secondAttribute="trailing" constant="4" id="sVZ-OT-P9M"/>
+                            <constraint firstItem="k3b-41-LlN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vrE-mk-jac"/>
+                            <constraint firstItem="Vrx-dV-rGs" firstAttribute="top" secondItem="k3b-41-LlN" secondAttribute="bottom" constant="8" id="wgC-tg-xVN"/>
+                            <constraint firstItem="cVH-rN-QHN" firstAttribute="top" secondItem="29E-R0-CBa" secondAttribute="bottom" constant="21" id="y94-cC-yh2"/>
+                            <constraint firstItem="Teg-tL-P9g" firstAttribute="top" secondItem="c61-uo-YyP" secondAttribute="bottom" constant="13" id="zS5-rC-dfd"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="GetLeaderBoardsBTN" destination="Vrx-dV-rGs" id="AMe-mC-4ii"/>
                         <outlet property="ShowLeaderBoardBTN" destination="Q1d-B3-ivt" id="Mby-TF-Whr"/>
@@ -109,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274.5" y="876.5"/>
+            <point key="canvasLocation" x="274.39999999999998" y="875.71214392803608"/>
         </scene>
     </scenes>
 </document>

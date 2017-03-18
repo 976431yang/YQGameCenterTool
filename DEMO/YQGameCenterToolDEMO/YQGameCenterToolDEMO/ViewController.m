@@ -120,6 +120,7 @@
              
              self.stateLab.text = @"已获取所有排行榜，信息已Log";
              NSLog(@"已获取所有排行榜:%@",array);
+             [self alerttitle:@"已获取所有排行榜" andInfo:[NSString stringWithFormat:@"%@",array]];
              
          }else{
              
@@ -196,6 +197,8 @@
          if(success){
              self.stateLab.text = @"分数下载成功，已Log";
              
+             NSString *showString = @"";
+             
              for (GKScore *obj in array) {
                  NSLog(@"玩家ID : %@",obj.player.playerID);
                  NSLog(@"玩家昵称 : %@",obj.player.displayName);
@@ -204,7 +207,18 @@
                  NSLog(@"分数  : %lld",obj.value);
                  NSLog(@"排名  : %ld",(long)obj.rank);
                  NSLog(@"------------------------");
+                 
+                 //string-----------------------
+                 showString = [showString stringByAppendingString:[NSString stringWithFormat:@"\n排名  : %ld------------------------",(long)obj.rank]];
+                 showString = [showString stringByAppendingString:[NSString stringWithFormat:@"\n玩家ID : %@",obj.player.playerID]];
+                 showString = [showString stringByAppendingString:[NSString stringWithFormat:@"\n玩家昵称 : %@",obj.player.displayName]];
+                 showString = [showString stringByAppendingString:[NSString stringWithFormat:@"\n时间  : %@",obj.date]];
+                 showString = [showString stringByAppendingString:[NSString stringWithFormat:@"\n带 单位的 分数  : %@",obj.formattedValue]];
+                 showString = [showString stringByAppendingString:[NSString stringWithFormat:@"\n分数  : %lld",obj.value]];
+                 
+                 
              }
+             [self alerttitle:@"分数下载成功" andInfo:showString];
              
          }else{
              
@@ -238,17 +252,46 @@
             
             self.stateLab.text = @"获取在线好友成功，已Log";
             
+            NSString *showString = @"";
             for (GKPlayer *player in array) {
                 NSLog(@"玩家ID : %@",player.playerID);
                 NSLog(@"name : %@",player.displayName);
                 NSLog(@"alisa  : %@",player.alias);
                 NSLog(@"------------------------");
+                
+                //string-----------------------
+                showString = [showString stringByAppendingString:[NSString stringWithFormat:@"\n玩家ID : %@",player.playerID]];
+                showString = [showString stringByAppendingString:[NSString stringWithFormat:@"\nname : %@",player.displayName]];
+                showString = [showString stringByAppendingString:[NSString stringWithFormat:@"\nalisa  : %@",player.alias]];
+                showString = [showString stringByAppendingString:@"\n------------------------"];
             }
+            [self alerttitle:@"获取在线好友成功" andInfo:showString];
             
         }else{
             self.stateLab.text = @"获取在线好友失败了";
         }
     }];
+    
+}
+
+
+
+//弹窗
+-(void)alerttitle:(NSString *)title andInfo:(NSString *)Info{
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
+                                                                             message:Info
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"好的"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction * _Nonnull action) {
+                                                          //NSLog(@"相关操作");
+                                                          
+                                                      }]];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+
     
 }
 
