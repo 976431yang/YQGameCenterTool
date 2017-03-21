@@ -20,7 +20,7 @@
 - [手动下载GameCenter排行榜的分数](#手动下载GameCenter排行榜的分数)
 - [报告玩家取得了成就](#报告玩家取得了成就)
 - [获取玩家在线的好友](#获取玩家在线的好友)
-
+ 
 ###### 检测GameCenter是否可用
 ```Objective-C
 	if([YQGameCenterTool isAvailable]){
